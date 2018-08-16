@@ -10,25 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-/* sticky footer styling */
-
-html,
-body {
-    height: 100%;
-}
-
-.wrapper {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto -105px;
-}
-
-footer,
-.push {
-    height: 105px;
-}
-
 /* hover styling */
 
 #logo:hover,
@@ -139,22 +120,8 @@ footer {
     text-align: center;
     background: #666;
     border-top: 8px solid #4aaaa5;
-    left: 0;
-    right: 0;
+    height: 50px;
 }
-    /* height: 50px; */
-    /* width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0; */
-
-/* 
-h3, h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eee;
-} */
 
 /* main content styling */
 
@@ -253,4 +220,66 @@ input[type=submit] {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+    div.container {
+        max-width: 75%;
+        min-width: 75%;
+        height: auto;
+    }
+
+    .work {
+        position: relative;
+        float: left;
+        max-width: 50%;
+        overflow: auto;
+    }    
+
+}
+
+@media screen and (max-width: 768px) {
+    div.container {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+
+    .auth-image {
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+
+    .work {
+        position: relative;
+        float: left;
+        max-width: 47%;
+        overflow: auto;
+    }    
+    
+}
+
+@media screen and (max-width: 640px) {
+    div.container {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+
+    .auth-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .work {
+        position: relative;
+        float: left;
+        max-width: 100%;
+        min-width: 100%;
+        overflow: auto;
+    }
+    
 }
