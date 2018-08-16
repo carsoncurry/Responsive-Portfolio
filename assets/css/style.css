@@ -281,5 +281,11 @@ input[type=submit] {
         min-width: 100%;
         overflow: auto;
     }
-    
+
+    #masthead {
+        position: static;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
