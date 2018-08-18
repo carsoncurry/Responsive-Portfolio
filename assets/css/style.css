@@ -186,6 +186,8 @@ footer {
 
 #contact-form ul {
     margin-bottom: 20px;
+    list-style: none;
+    left: 0;
 }
 
 #contact-form li {
